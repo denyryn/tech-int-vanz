@@ -1,0 +1,141 @@
+{
+  "hero": {
+    "title": "Rasakan Sensasi <strong>Ogura Premium</strong> Khas Oma Opa",
+    "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+    "image": "http://localhost:3000/images/hero_cake.png"
+  },
+  "products": [
+    {
+      "name": "Malmil Cake",
+      "items": [
+        {
+          "name": "Malmil Cake",
+          "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+          "image": "http://localhost:3000/images/products/malmil_cheese_1.png",
+          "price": "Rp. 100.000"
+        },
+        {
+          "name": "Malmil Cake",
+          "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+          "image": "http://localhost:3000/images/products/malmil_cheese_1.png",
+          "price": "Rp. 100.000"
+        },
+        {
+          "name": "Malmil Cake",
+          "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+          "image": "http://localhost:3000/images/products/malmil_cheese_1.png",
+          "price": "Rp. 100.000"
+        },
+        {
+          "name": "Malmil Cake",
+          "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+          "image": "http://localhost:3000/images/products/malmil_cheese_1.png",
+          "price": "Rp. 100.000"
+        }
+      ]
+    },
+    {
+      "name": "Ogura Cake",
+      "items": [
+        {
+          "name": "Ogura Cake",
+          "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+          "image": "http://localhost:3000/images/products/malmil_cheese_2.png",
+          "price": "Rp. 100.000"
+        },
+        {
+          "name": "Ogura Cake",
+          "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+          "image": "http://localhost:3000/images/products/malmil_cheese_2.png",
+          "price": "Rp. 100.000"
+        },
+        {
+          "name": "Ogura Cake",
+          "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+          "image": "http://localhost:3000/images/products/malmil_cheese_2.png",
+          "price": "Rp. 100.000"
+        },
+        {
+          "name": "Ogura Cake",
+          "description": "Rasakan kelembutan ogura cake ala Jepang dari Oma Opa. Fluffy, premium, dan cocok untuk semua momen.",
+          "image": "http://localhost:3000/images/products/malmil_cheese_2.png",
+          "price": "Rp. 100.000"
+        }
+      ]
+    }
+  ],
+  "about": {
+    "short": {
+      "content": "Oma Opa Cakery adalah UMKM asal Yogyakarta yang menyajikan ogura cake super lembut dengan rasa premium dan harga terjangkau. Berdiri sejak 2017, kami telah hadir di lebih dari 20 kota dan menjadi pilihan oleh-oleh favorit keluarga, mahasiswa, dan pecinta kue di Indonesia.",
+      "image": "http://localhost:3000/images/about_banner.png"
+    },
+    "long": {
+      "content": "Oma Opa Cakery adalah UMKM asal Yogyakarta yang menyajikan ogura cake super lembut dengan rasa premium dan harga terjangkau. Berdiri sejak 2017, kami telah hadir di lebih dari 20 kota dan menjadi pilihan oleh-oleh favorit keluarga, mahasiswa, dan pecinta kue di Indonesia.",
+      "image": "http://localhost:3000/images/about_banner.png"
+    }
+  },
+  "testimonials": [
+    {
+      "name": "John Pranata",
+      "message": "Kue Ogura dari Oma Opa bener-bener lembut dan meleleh di mulut. Anak saya sampai minta tambah tiga kali!",
+      "image": "http://localhost:3000/images/users/user_12.jpg"
+    },
+    {
+      "name": "Andi Nugroho",
+      "message": "Lembutnya Ogura bikin nostalgia sama kue buatan nenek zaman kecil dulu. Recommended banget.",
+      "image": "http://localhost:3000/images/users/user_14.jpg"
+    },
+    {
+      "name": "Hendra Wijaya",
+      "message": "Saya kirimkan ke orang tua di kampung, mereka bilang ini kue terenak yang pernah mereka coba.",
+      "image": "http://localhost:3000/images/users/user_28.jpg"
+    },
+    {
+      "name": "Rina Oktaviani",
+      "message": "Packaging-nya rapi, rasa kuenya mewah. Cocok banget buat hadiah ulang tahun atau hampers lebaran.",
+      "image": "http://localhost:3000/images/users/user_33.jpg"
+    },
+    {
+      "name": "Andika Yusuf",
+      "message": "Tekstur kuenya beda dari yang lain. Fluffy dan moist, nggak bikin eneg. Wajib coba!",
+      "image": "http://localhost:3000/images/users/user_44.jpg"
+    },
+    {
+      "name": "Claudia Stephanie",
+      "message": "Aku suka banget sama varian matcha-nya. Rasanya pas, aroma tehnya kerasa banget.",
+      "image": "http://localhost:3000/images/users/user_66.jpg"
+    },
+    {
+      "name": "Rafael Putra",
+      "message": "Baru kali ini saya beli kue online dan hasilnya sebagus ini. Anak-anak pun suka semua.",
+      "image": "http://localhost:3000/images/users/user_72.jpg"
+    },
+    {
+      "name": "Michael Santoso",
+      "message": "Pelayanannya cepat dan ramah. Kuenya sampai dalam kondisi sempurna dan rasanya top!",
+      "image": "http://localhost:3000/images/users/user_81.jpg"
+    }
+  ],
+  "footer": {
+    "location": "Jl. Banjarsari Raya, Kec. Tembalang, Kota Semarang",
+    "phone": "+6285315004300",
+    "socials": [
+      {
+        "name": "Whatsapp",
+        "link": "https://api.whatsapp.com/send/?phone=6285315004300&text&type=phone_number&app_absent=0"
+      },
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/omaopacakery_jateng?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+      },
+      {
+        "name": "Twitter",
+        "link": "https://www.twitter.com/omapocakery"
+      },
+      {
+        "name": "Facebook",
+        "link": "https://www.facebook.com/omapocakery"
+      }
+    ]
+  }
+}

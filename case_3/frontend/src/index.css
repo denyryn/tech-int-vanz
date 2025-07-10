@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-accent: #fdcc03;
+}
+
+@layer base {
+  html {
+    font-family: "Hanken Grotesk", sans-serif;
+    scroll-behavior: smooth;
+    @apply bg-white antialiased select-none;
+  }
+
+  a {
+    @apply text-black hover:text-[var(--color-accent)] transition-colors duration-100 hover:underline;
+  }
+
+  h1 {
+    @apply text-4xl xl:text-6xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg font-bold;
+  }
+
+  h4 {
+    @apply text-base font-bold;
+  }
+
+  h1 strong,
+  h2 strong,
+  h3 strong,
+  h4 strong {
+    @apply text-yellow-500;
+  }
+
+  button {
+    @apply font-bold cursor-pointer;
+  }
+}
+
+@layer components {
+  .color-accent {
+    color: #fdcc03;
+  }
+
+  .nav-container {
+    @apply flex justify-between items-center p-4;
+  }
+
+  .btn-secondary {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-md;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+}
