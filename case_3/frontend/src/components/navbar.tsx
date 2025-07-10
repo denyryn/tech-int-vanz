@@ -1,7 +1,10 @@
-import Logo from "/src/assets/logo/logo_landscape.png";
-import { useNavItems } from "../hooks/useNavItems";
+import { useState } from "react";
 import type { NavItemType } from "../types/navItemType";
+import { useNavItems } from "../hooks/useNavItems";
 import useScrollTrigger from "../hooks/useScrollTrigger";
+import Logo from "/src/assets/logo/logo_landscape.png";
+import Burger from "/src/assets/svgs/burger.svg";
+import Cross from "/src/assets/svgs/cross.svg";
 
 const GoToSection = (section: string) => {
   const element = document.getElementById(section);
@@ -10,14 +13,17 @@ const GoToSection = (section: string) => {
   }
 };
 
-const NavLink = (item: NavItemType) => {
+const NavLink = (item: NavItemType & { toggleOpen?: () => void }) => {
   const isDisabled = item.isActive;
 
   return (
     <div
       role="button"
       tabIndex={0}
-      onClick={() => GoToSection(item.href)}
+      onClick={() => {
+        GoToSection(item.href);
+        item.toggleOpen?.();
+      }}
       className={`relative text-sm font-bold px-1 cursor-pointer py-0.5 transition-all duration-200
         ${
           isDisabled
@@ -40,6 +46,11 @@ const NavLink = (item: NavItemType) => {
 export default function Navbar() {
   const navItems = useNavItems();
   const isScrolled = useScrollTrigger(80);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <nav
@@ -73,23 +84,26 @@ export default function Navbar() {
         {/* Mobile Menu (placeholder) */}
         <div className="md:hidden">
           <button
-            className="text-gray-800 hover:text-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            onClick={toggleOpen}
+            className="text-gray-800 hover:text-yellow-500 focus:outline-none"
             aria-label="Open menu"
           >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+            <img src={isOpen ? Cross : Burger} alt="Menu" className="w-6" />
           </button>
+        </div>
+
+        <div
+          className={`absolute top-16 left-0 w-full bg-white md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isOpen ? "max-h-[999px] py-4" : "max-h-0 py-0"
+          }`}
+        >
+          <ul className="flex flex-col items-center space-y-4">
+            {navItems.map((item) => (
+              <li key={item.label} className="group py-2">
+                <NavLink {...item} toggleOpen={toggleOpen} />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>
