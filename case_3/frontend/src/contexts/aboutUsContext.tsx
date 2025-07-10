@@ -19,7 +19,7 @@ export const AboutUsProvider = ({
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/about")
+    fetch(import.meta.env.VITE_SOURCE_API_URL + "/api/about")
       .then(async (res) => {
         if (!res.ok) throw new Error("Failed to fetch about us");
         const data = await res.json();

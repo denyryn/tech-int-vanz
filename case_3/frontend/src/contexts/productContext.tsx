@@ -19,7 +19,7 @@ export const ProductProvider = ({
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/products")
+    fetch(import.meta.env.VITE_SOURCE_API_URL + "/api/products")
       .then(async (res) => {
         if (!res.ok) throw new Error("Failed to fetch products");
         const data = await res.json();

@@ -15,7 +15,7 @@ export const FooterProvider = ({ children }: { children: React.ReactNode }) => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/footer")
+    fetch(import.meta.env.VITE_SOURCE_API_URL + "/api/footer")
       .then(async (res) => {
         if (!res.ok) throw new Error("Failed to fetch footer");
         const data = await res.json();

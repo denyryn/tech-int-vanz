@@ -20,7 +20,7 @@ export const HeroProvider = ({ children }: { children: React.ReactNode }) => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/hero")
+    fetch(import.meta.env.VITE_SOURCE_API_URL + "/api/hero")
       .then(async (res) => {
         if (!res.ok) throw new Error("Failed to fetch hero");
         const data = await res.json();
